@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #e0e0e0;
+    padding: 50px;
+    margin: 100px 0;
+}
+
+section div {
+    background-color: rgb(255, 249, 192);
+}
+
+section div p {
+    background-color: rgb(85, 118, 219);
+    color: #fff;    
+}
+
+.flex01 div {
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+
+/* --------- .flex02 -------- */
+.flex02 div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex02 div p {
+    width: 30%;
+}
+
+.flex02 div p:first-child {
+    height: 150px;
+}
+
+.flex02 div p:nth-child(2) {
+    height: 100px;
+}
+
+.flex02 div p:nth-child(3) {
+    height: 300px;
+}
+
+
+/* --------- .flex03 -------- */
+.flex03 div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    align-content: center;
+}
+
+.flex03 div p {
+    width: 45%;
+}
+
+
+/* --------- .flex04 -------- */
+.flex04 div {
+    display: flex;
+}
+
+.flex04 div p:first-child {
+    order: 1;
+}
+
+
+/* --------- .flex05 -------- */
+.flex05 div {
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* --------- .box -------- */
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box h4 {
+    font-size: 30px;
+}
+
+.box p {
+    width: 100px;
+    height: 40px;
+    border: 1px solid #333;
+    text-align: center;
+    line-height: 40px;
+}

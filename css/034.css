@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box figure {
+    width: 500px;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 30px;
+}
+
+.box figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box figure:nth-child(1) img {
+    transform: scale(0.5);
+}
+
+.box figure:nth-child(2):hover img {
+    transform: scale(0.5);
+    transform-origin: left bottom;
+    /* transform-origin : 크기 변경 시작점 설정 x축 / y축 (기본값 center) */
+}
+
+.box figure:nth-child(3):hover img {
+    transform: scaleY(1.2);
+    transform-origin: top;
+}

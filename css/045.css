@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(28, 141, 88);
+    color: #fff;
+    font-size: 150px;
+    text-align: center;
+}
+
+h1::after {
+    content: " : 데스크탑";
+}
+
+/* 화면크기 1024px 이하일 때 스타일 변화 - 태블릿 가로 */
+@media screen and (max-width:1024px) {
+    body {
+        background-color: pink;
+        font-size: 80px;
+    }
+    h1::after {
+        content: " : 태블릿";
+    }
+}
+
+/* 화면크기 767px 이하일 때 스타일 변화 - 태블릿 세로, 모바일 가로 */
+@media screen and (max-width:767px) {
+    body {
+        background-color: rgb(131, 103, 255);
+        font-size: 50px;
+    }
+    h1::after {
+        content: " : 모바일";
+    }
+}
+
+/* 화면크기 480px 이하일 때 스타일 변화  - 모바일 세로 */
+@media screen and (max-width:480px) {
+    body {
+        background-color: rgb(103, 164, 255);
+        font-size: 40px;
+    }
+    h1::after {
+        content: " : 모바일 세로";
+    }
+}
